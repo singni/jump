@@ -1,0 +1,75 @@
+[
+  {
+    "path": "",
+    "component": "Layout",
+    "redirect": "dashboard",
+    "children": [
+      {
+        "path": "dashboard",
+        "component": "dashboard/index",
+        "meta": {
+          "title": "控制台",
+          "icon": "el-icon-share"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/BaseFun",
+    "component": "Layout",
+    "redirect": "/Base/staff",
+    "name": "Base",
+    "meta": {
+      "title": "基本功能",
+      "icon": "el-icon-edit-outline"
+    },
+    "children": [
+      {
+        "path": "staff",
+        "name": "staff",
+        "component": "BaseFun/staff/index",
+        "meta": {
+          "title": "取派员设置",
+          "icon": "table"
+        }
+      },
+      {
+        "path": "region",
+        "name": "region",
+        "component": "BaseFun/region/index",
+        "meta": {
+          "title": "区域设置",
+          "icon": "tree"
+        }
+      },
+      {
+        "path": "tree",
+        "name": "subarea",
+        "component": "BaseFun/subarea/index",
+        "meta": {
+          "title": "管理分区",
+          "icon": "tree"
+        }
+      },
+      {
+        "path": "decidedzone",
+        "name": "decidedzone",
+        "component": "BaseFun/decidedzone/index",
+        "meta": {
+          "title": "管理定区",
+          "icon": "tree"
+        }
+      }
+    ]
+  },
+  {
+    "path": "*",
+    "redirect": "/404",
+    "hidden": true
+  },
+  {
+    "path": "/login",
+    "component": "login/index",
+    "hidden ": true
+  }
+]

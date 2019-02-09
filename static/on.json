@@ -1,0 +1,46 @@
+{
+  "status": 200,
+  "msg": "OK",
+  "data": [
+    {
+      "path": "",
+      "component": "Layout",
+      "redirect": "dashboard",
+      "meta": {
+        "icon": "",
+        "title": ""
+      },
+      "children": [
+        {
+          "path": "dashboard",
+          "component": "dashboard/index",
+          "meta": {
+            "icon": "el-icon-share",
+            "title": "控制台"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/BaseFun",
+      "component": "Layout",
+      "redirect": "/Base/staff",
+      "name": "Base",
+      "meta": {
+        "icon": "el-icon-edit-outline",
+        "title": "基本功能"
+      },
+      "children": [
+        {
+          "path": "staff",
+          "component": "BaseFun/staff/index",
+          "name": "staff",
+          "meta": {
+            "icon": "table",
+            "title": "取派员设置"
+          }
+        }
+      ]
+    }
+  ]
+}
